@@ -1,0 +1,57 @@
+package HemanthAcademy;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import framework.pageobjects.Billing_PageObjects;
+import framework.pageobjects.Cart_PageObjects;
+import framework.pageobjects.Catalog_PageObjects;
+import framework.pageobjects.Landingpage_PageObjects;
+import framework.pageobjects.OrderConfirmation_PageObjects;
+import io.github.bonigarcia.wdm.DriverManagerType;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
+
+public class Standalonescript extends BaseTest{
+
+	public static void main(String[] args) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		
+		String ProductName="ADIDAS ORIGINAL";
+		//WebDriver driver=new ChromeDriver();
+		Landingpage_PageObjects LP=new Landingpage_PageObjects(driver);
+		LP.getto("https://www.rahulshettyacademy.com/client");
+		LP.LogintoApplication("hemanthkrishnarao1989@gmail.com", "Hemanth12$");
+		//Thread.sleep(3000);
+		
+		//Catalog_PageObjects CP=new Catalog_PageObjects(driver);
+		List<WebElement> products=Catalog_PageObjects.getproductsList();
+		CP.addProductToCart("ADIDAS ORIGINAL");
+		CP.clickCartLink();
+		Cart_PageObjects Crtpo=new Cart_PageObjects(driver);
+		Crtpo.CheckoutCart("ADIDAS ORIGINAL");
+		Billing_PageObjects BPO=new Billing_PageObjects(driver);
+		BPO.enterBillingDetails();
+		
+		OrderConfirmation_PageObjects OrdPO=new OrderConfirmation_PageObjects(driver);
+		OrdPO.verifyConfirmationMessage("THANKYOU FOR THE ORDER.");
+		
+		driver.close();
+		
+	}
+}

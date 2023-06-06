@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-13T18:33:37 IST" name="Suite" finished-at="2023-03-13T18:34:57 IST" duration-ms="79672">
+    <groups>
+      <group name="Purchase">
+        <method signature="Standalonescript.submitorder(java.util.HashMap)[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" name="submitorder" class="HemanthAcademy.Standalonescript"/>
+      </group> <!-- Purchase -->
+      <group name="Error Validation">
+        <method signature="ErrorValidation.ProductValidation()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" name="ProductValidation" class="HemanthAcademy.ErrorValidation"/>
+      </group> <!-- Error Validation -->
+    </groups>
+    <test started-at="2023-03-13T18:33:37 IST" name="Test" finished-at="2023-03-13T18:34:28 IST" duration-ms="50712">
+      <class name="HemanthAcademy.Standalonescript">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:33:38 IST" name="launchapplication" finished-at="2023-03-13T18:33:52 IST" duration-ms="13936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:33:52 IST" name="submitorder" data-provider="getData" finished-at="2023-03-13T18:33:56 IST" duration-ms="4566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productname=ZARA COAT 3, password=Hemanth12$, email=hemanthkrishnarao1989@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:33:56 IST" name="teardown" finished-at="2023-03-13T18:33:58 IST" duration-ms="1905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:33:58 IST" name="launchapplication" finished-at="2023-03-13T18:34:09 IST" duration-ms="10798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:34:09 IST" name="submitorder" data-provider="getData" finished-at="2023-03-13T18:34:13 IST" duration-ms="3606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{productname=ADIDAS ORIGINAL, password=Iamking@000, email=shetty@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitorder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:34:13 IST" name="teardown" finished-at="2023-03-13T18:34:14 IST" duration-ms="1780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:34:14 IST" name="launchapplication" finished-at="2023-03-13T18:34:25 IST" duration-ms="10389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="validateOrder()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:34:25 IST" name="validateOrder" finished-at="2023-03-13T18:34:26 IST" depends-on-methods="HemanthAcademy.Standalonescript.submitorder" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HemanthAcademy.Standalonescript@7d9f158f]" started-at="2023-03-13T18:34:26 IST" name="teardown" finished-at="2023-03-13T18:34:28 IST" duration-ms="2085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- HemanthAcademy.Standalonescript -->
+    </test> <!-- Test -->
+    <test started-at="2023-03-13T18:34:29 IST" name="Test2" finished-at="2023-03-13T18:34:57 IST" duration-ms="28405">
+      <class name="HemanthAcademy.ErrorValidation">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:29 IST" name="launchapplication" finished-at="2023-03-13T18:34:39 IST" duration-ms="10381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:39 IST" name="LoginErrorValidation" finished-at="2023-03-13T18:34:40 IST" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:40 IST" name="teardown" finished-at="2023-03-13T18:34:41 IST" duration-ms="1941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:41 IST" name="launchapplication" finished-at="2023-03-13T18:34:52 IST" duration-ms="10746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ProductValidation()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:52 IST" name="ProductValidation" finished-at="2023-03-13T18:34:55 IST" duration-ms="2635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HemanthAcademy.ErrorValidation@13bc8645]" started-at="2023-03-13T18:34:55 IST" name="teardown" finished-at="2023-03-13T18:34:57 IST" duration-ms="2067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- HemanthAcademy.ErrorValidation -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

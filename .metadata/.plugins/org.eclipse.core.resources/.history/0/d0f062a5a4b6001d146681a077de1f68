@@ -1,0 +1,70 @@
+package HemanthAcademy;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import framework.pageobjects.Billing_PageObjects;
+import framework.pageobjects.Cart_PageObjects;
+import framework.pageobjects.Catalog_PageObjects;
+import framework.pageobjects.OrderConfirmation_PageObjects;
+import framework.pageobjects.Orders_PageObjects;
+
+public class Standalonescript extends BaseTest{
+	String ProductName="ADIDAS ORIGINAL";
+	@Test(dataProvider="getData",groups="Purchase")
+	public void submitorder(HashMap<String,String> input) throws IOException
+	{
+		// TODO Auto-generated method stub
+		
+		Catalog_PageObjects CP=LP.LogintoApplication(input.get("email"),input.get("password"));
+		List<WebElement> products=CP.getproductsList();
+		CP.addProductToCart(input.get("productname"));
+		Cart_PageObjects cartpage=CP.clickCartLink();
+		Billing_PageObjects BPO=cartpage.CheckoutCart(input.get("productname"));
+		OrderConfirmation_PageObjects OrdPO=BPO.enterBillingDetails();
+		OrdPO.verifyConfirmationMessage("THANKYOU FOR THE ORDER.");
+		
+	}
+	
+	@Test(dependsOnMethods="submitorder")
+	public void validateOrder() throws IOException
+	{
+		// TODO Auto-generated method stub
+		Catalog_PageObjects CP=LP.LogintoApplication("hemanthkrishnarao1989@gmail.com", "Hemanth12$");
+		Orders_PageObjects orderspage=CP.gotoOrdersPage();
+		Assert.assertTrue(orderspage.VerifyOrders(ProductName));
+	}
+	
+//	@DataProvider
+//	public Object[][] getData()
+//	{
+//		return new Object[][] {{"hemanthkrishnarao1989@gmail.com","Hemanth12$","ZARA COAT 3"},{"shetty@gmail.com","Iamking@000","ADIDAS ORIGINAL"}};
+//	}
+	/*
+	 * @DataProvider public Object[][] getData() { HashMap<String,String> map=new
+	 * HashMap<String,String>(); map.put("email",
+	 * "hemanthkrishnarao1989@gmail.com"); map.put("password", "Hemanth12$");
+	 * map.put("productname","ZARA COAT 3");
+	 * 
+	 * HashMap<String,String> map1=new HashMap<String,String>(); map1.put("email",
+	 * "shetty@gmail.com"); map1.put("password", "Iamking@000");
+	 * map1.put("productname","ADIDAS ORIGINAL"); return new Object[][]
+	 * {{map},{map1}}; }
+	 */
+	
+	@DataProvider
+	public Object[][] getData() throws IOException
+	{
+		List<HashMap<String,String>> data=convertJasonToString();
+		return new Object[][] {{data.get(0)},{data.get(1)}};
+	}
+	
+	
+}

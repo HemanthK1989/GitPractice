@@ -1,0 +1,13 @@
+package HemanthAcademy;
+
+import org.testng.ITestListener;
+
+public class Listerners_Class implements ITestListener
+{
+	public void onTestStart(ITestResult result)
+	{
+		
+	}
+	
+
+}
