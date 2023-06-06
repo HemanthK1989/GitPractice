@@ -36,6 +36,7 @@ public class Standalonescript extends BaseTest{
 		OrderConfirmation_PageObjects OrdPO=BPO.enterBillingDetails();
 		OrdPO.verifyConfirmationMessage("THANKYOU FOR THE ORDER.");
 		System.out.println("Order confirmed successfully");
+		System.out.println("Git Practice");
 		
 	}
 	

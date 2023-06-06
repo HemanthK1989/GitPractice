@@ -36,6 +36,7 @@ public class ErrorValidation extends BaseTest{
 		CP.addProductToCart("ADIDAS ORIGINAL");
 		Cart_PageObjects cartpage=CP.clickCartLink();
 		Billing_PageObjects BPO=cartpage.CheckoutCart("ADIDAS ORIGINAL");
+		System.out.println(ProductName);
 
 		
 	}
