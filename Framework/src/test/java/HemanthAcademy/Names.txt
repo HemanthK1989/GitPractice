@@ -3,9 +3,7 @@ Alphabets
 a
 b
 c
-d
-e
-f
+
 
 Numbers
 
@@ -18,3 +16,4 @@ Numbers
 7
 8
 9
+
