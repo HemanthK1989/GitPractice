@@ -1,0 +1,38 @@
+package hemanthPractice.Tests;
+
+import static org.testng.Assert.assertTrue;
+import java.io.IOException;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import hemanthPractice.PageObjects.CheckoutPageObjects;
+import hemanthPractice.PageObjects.OrdersPageObjects;
+import hemanthPractice.PageObjects.PaymentPageObjects;
+import hemanthPractice.PageObjects.ProductCatalogPageObjects;
+import hemanthPractice.TestComponent.BaseTest;
+
+public class SubmitOrder extends BaseTest{
+	String productName="ZARA COAT 3";
+	String countryName="india";
+	
+	@Test
+	public void submitOrder() throws IOException{
+		// TODO Auto-generated method stub
+		ProductCatalogPageObjects PC=LP.loginToApplication("hemanthkrishnarao1989@gmail.com", "Hemanth12$");
+		CheckoutPageObjects CP=PC.addProductToCart(productName);
+		Assert.assertTrue(CP.verifyProductInCheckout(productName));
+		PaymentPageObjects PP=CP.clickCheckout();
+		PP.selectCountryDropDown(countryName);
+		String ConfMessage=PP.verifyConfMesage();
+		assertTrue(ConfMessage.equalsIgnoreCase("Thankyou for the order."));
+		LP.signOut();
+	}
+	
+	public void verifyOrder()
+	{
+		LP.loginToApplication("hemanthkrishnarao1989@yopmail.com", "Hemanth12$");
+		OrdersPageObjects orp=LP.goToOrdersPage();
+		orp.validateOrder(productName);
+	}
+
+}

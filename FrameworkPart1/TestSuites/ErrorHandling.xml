@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<!--<groups>
+		<run>
+			<include name="ErrorHandling"/>
+		</run>
+	</groups>
+-->	
+<listeners>
+		<listener class-name="hemanthPractice.TestComponent.ListenersClass"></listener>
+	</listeners> 
+   <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="hemanthPractice.Tests.ValidateErrorLogin"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

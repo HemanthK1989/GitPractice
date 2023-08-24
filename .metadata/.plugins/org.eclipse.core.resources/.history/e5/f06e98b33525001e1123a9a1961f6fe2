@@ -1,0 +1,31 @@
+package hemanthPractice;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.UnexpectedAlertBehaviour;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+
+import io.github.bonigarcia.wdm.DriverManagerType;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Standalone {
+	
+	public static void main(String[] args)
+	{	
+		ChromeOptions nChromeOptions = new ChromeOptions();
+		//nChromeOptions.setExperimentalOption("prefs", prefs);
+		nChromeOptions.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+		nChromeOptions.addArguments("--disable-notifications");
+		nChromeOptions.addArguments("--enable-allow-sync-xhr-in-page-dismissal");
+		
+		nChromeOptions.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+		WebDriverManager.getInstance(DriverManagerType.CHROME).version("2.42").setup();
+		WebDriver driver=new ChromeDriver(nChromeOptions);
+		driver.get("https://www.rahulshettyacademy.com/client/");
+	}
+
+}
