@@ -99,7 +99,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_zdknbj_nEe6N_q3cYJcuaw" containerData="7500" selectedElement="_zdknbz_nEe6N_q3cYJcuaw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_zdknbj_nEe6N_q3cYJcuaw" containerData="7500" selectedElement="_zdkndj_nEe6N_q3cYJcuaw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_zdknbz_nEe6N_q3cYJcuaw" containerData="7500" selectedElement="_zdkncD_nEe6N_q3cYJcuaw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_zdkncD_nEe6N_q3cYJcuaw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_zdlPej_nEe6N_q3cYJcuaw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_zdkncT_nEe6N_q3cYJcuaw" elementId="right" containerData="2500" selectedElement="_zdkncj_nEe6N_q3cYJcuaw">
@@ -210,7 +210,6 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_4N0WYEJwEe60B51Ihvt7gg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DeleteOrder.feature" iconURI="platform:/plugin/cucumber.eclipse.editor/icons/cukes.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;cucumber.eclipse.editor.editors.Editor&quot; name=&quot;DeleteOrder.feature&quot; partName=&quot;DeleteOrder.feature&quot; title=&quot;DeleteOrder.feature&quot; tooltip=&quot;FrameworkPart1/src/test/java/cucumber/DeleteOrder.feature&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FrameworkPart1/src/test/java/cucumber/DeleteOrder.feature&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;489&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -254,7 +253,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_yZElAEJ6Ee60B51Ihvt7gg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TestNGCucumberRunner.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestNGCucumberRunner.java&quot; partName=&quot;TestNGCucumberRunner.java&quot; title=&quot;TestNGCucumberRunner.java&quot; tooltip=&quot;FrameworkPart1/src/test/java/cucumber/TestNGCucumberRunner.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FrameworkPart1/src/test/java/cucumber/TestNGCucumberRunner.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;343&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestNGCucumberRunner.java&quot; partName=&quot;TestNGCucumberRunner.java&quot; title=&quot;TestNGCucumberRunner.java&quot; tooltip=&quot;FrameworkPart1/src/test/java/cucumber/TestNGCucumberRunner.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/FrameworkPart1/src/test/java/cucumber/TestNGCucumberRunner.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;345&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -438,7 +437,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zdl1mT_nEe6N_q3cYJcuaw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_I_w7gEJvEe60B51Ihvt7gg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zdtxjj_nEe6N_q3cYJcuaw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dHrBsEMvEe6kMdYHvklDOQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_zdtxjj_nEe6N_q3cYJcuaw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zdl1pj_nEe6N_q3cYJcuaw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -469,7 +468,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zdl13z_nEe6N_q3cYJcuaw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_I_0l4EJvEe60B51Ihvt7gg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_zdtKiz_nEe6N_q3cYJcuaw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dHrBvUMvEe6kMdYHvklDOQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_zdtKiz_nEe6N_q3cYJcuaw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_zdl16j_nEe6N_q3cYJcuaw" elementId="org.eclipse.jdt.ui.PropertiesFileEditor" visible="false">
         <tags>Draggable</tags>
