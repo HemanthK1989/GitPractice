@@ -48,7 +48,7 @@ public class ProductCatalogPageObjects extends AbstractComponents {
 		return prd;
 	}
 	
-	public CheckoutPageObjects addProductToCart(String productName)
+	public CheckoutPageObjects addProductToCart(String productName) throws InterruptedException
 	{
 		WebElement prd=getProductByName(productName);
 		prd.findElement(addTocart).click();

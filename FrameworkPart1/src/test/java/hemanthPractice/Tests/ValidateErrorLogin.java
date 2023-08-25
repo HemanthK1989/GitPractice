@@ -22,7 +22,7 @@ public class ValidateErrorLogin extends BaseTest{
 		}
 	
 	@Test()
-	public void productErrorValidation()
+	public void productErrorValidation() throws InterruptedException
 	{
 		ProductCatalogPageObjects PC=LP.loginToApplication("hemanthkrishnarao1989@gmail.com", "Hemanth12$");
 		CheckoutPageObjects CP=PC.addProductToCart(productName);

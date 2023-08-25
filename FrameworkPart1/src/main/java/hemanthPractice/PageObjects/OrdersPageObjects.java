@@ -27,6 +27,12 @@ public class OrdersPageObjects extends AbstractComponents {
 	@FindBy(xpath="//h1[text()='Your Orders']")
 	WebElement yourOrdersText;
 	
+	@FindBy(xpath="(//button[@class='btn btn-danger'])[1]")
+	WebElement deleteBtn;
+	
+	@FindBy(css="[class*='flyInOut']")
+	WebElement SuccessMessage;
+	
 	
 	public boolean validateOrder(String productName)
 	{
@@ -34,5 +40,12 @@ public class OrdersPageObjects extends AbstractComponents {
 		waitForElementToLoad(yourOrdersText);
 		Boolean match=prdNames.stream().anyMatch(ordPrd->ordPrd.getText().equalsIgnoreCase(productName));
 		return match;
+	}
+	
+	public String deleteOrder()
+	{
+		deleteBtn.click();
+		waitForElementToLoad(SuccessMessage);
+		return SuccessMessage.getText();
 	}
 }

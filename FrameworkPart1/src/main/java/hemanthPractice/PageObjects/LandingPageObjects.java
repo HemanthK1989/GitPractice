@@ -32,6 +32,9 @@ public class LandingPageObjects extends AbstractComponents{
 	WebElement signOut;
 	@FindBy(css="[class*='flyInOut']")
 	WebElement EmailerrorMessage;
+	@FindBy(css="#toast-container")
+	WebElement SuccessMsg;
+	
 	
 	public ProductCatalogPageObjects loginToApplication(String userName,String password)
 	{
@@ -39,6 +42,7 @@ public class LandingPageObjects extends AbstractComponents{
 		Email.sendKeys(userName);
 		Password.sendKeys(password);
 		LoginBtn.click();
+		waitForElementToInvisibleCSS(SuccessMsg);
 		ProductCatalogPageObjects PCP=new ProductCatalogPageObjects(driver);
 		return PCP;
 	}

@@ -56,6 +56,15 @@ public class AbstractComponents {
 		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 	}
 	
+	public void waitForElementToInvisibleCSS(WebElement Ele)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.invisibilityOf(Ele));
+	}
+	
+	//*[text()='Order Deleted Successfully')]
+	
+	
 	public void clickButtonAction(WebDriver driver,By FindBy)
 	{
 		Actions act=new Actions(driver);

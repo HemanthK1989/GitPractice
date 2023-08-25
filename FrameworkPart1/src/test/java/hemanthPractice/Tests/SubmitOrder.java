@@ -21,7 +21,7 @@ public class SubmitOrder extends BaseTest{
 	String countryName="india";
 	
 	@Test(dataProvider="getData",groups="Purchase")
-	public void submitOrder(HashMap<String,String> input) throws IOException{
+	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException{
 		// TODO Auto-generated method stub
 		ProductCatalogPageObjects PC=LP.loginToApplication(input.get("email"), input.get("password"));
 		CheckoutPageObjects CP=PC.addProductToCart(input.get("productname"));
