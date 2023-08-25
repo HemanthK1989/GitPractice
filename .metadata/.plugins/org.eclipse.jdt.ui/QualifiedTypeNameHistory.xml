@@ -43,4 +43,5 @@
     <fullyQualifiedTypeName name="org.testng.IRetryAnalyzer"/>
     <fullyQualifiedTypeName name="com.sun.net.httpserver.Authenticator.Retry"/>
     <fullyQualifiedTypeName name="hemanthPractice.TestComponent.Retry"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
 </qualifiedTypeNameHistroy>
