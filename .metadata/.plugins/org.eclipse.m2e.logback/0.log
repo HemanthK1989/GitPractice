@@ -5615,3 +5615,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration ValidateErrorLogin 
 2023-08-29 12:05:15,516 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-08-29 12:05:15,516 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Git_hemanth\GitPractice\FrameworkPart1\src\main\resources
 2023-08-29 12:05:15,519 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-08-29 12:05:15,519 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Git_hemanth\GitPractice\FrameworkPart1\src\test\resources
